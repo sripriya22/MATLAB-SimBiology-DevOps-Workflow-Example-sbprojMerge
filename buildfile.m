@@ -1,5 +1,4 @@
 function plan = buildfile
-
 import matlab.buildtool.tasks.*
 
 plan = buildplan(localfunctions);
