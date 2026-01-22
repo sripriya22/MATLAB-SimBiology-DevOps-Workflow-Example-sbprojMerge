@@ -40,6 +40,7 @@ plan("compile").Outputs = fullfile(proj.RootFolder,"WebAppArchive");
 % Set default task
 plan.DefaultTasks = "compile";
 
+
 end
 
 function generateSimFunTask(~)
