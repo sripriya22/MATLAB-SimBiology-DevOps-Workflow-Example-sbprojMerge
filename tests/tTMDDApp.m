@@ -53,7 +53,7 @@ classdef tTMDDApp < matlab.uitest.TestCase
         % 
         %     % Drag slider
         %     % testCase.drag(testCase.App.DosingAmountSlider,100,200); % requires display (does not work on github)
-        %     testCase.App.DosingAmountField.Value = 200;
+        %     testCase.App.DosingAmountField.Value = 200; % BUT this does not trigger ValueChangedFcn callback ...
         % 
         %     % Check plot update
         %     testCase.verifyNotEqual(oldlhRO_XData, testCase.App.ROViewObj.lhRO.XData, "x values for RO not updated");
@@ -85,8 +85,11 @@ classdef tTMDDApp < matlab.uitest.TestCase
             oldlhComplex_YData  = testCase.App.ConcViewObj.lhComplex.YData;
 
             % Drag slider
-            % testCase.drag(testCase.App.DosingAmountSlider,100,200); % requires display (does not work on github)
-            testCase.App.DosingAmountField.Value = 200;
+            if batchStartupOptionUsed()
+                testCase.App.DosingAmountField.Value = 200;
+            else
+                testCase.drag(testCase.App.DosingAmountSlider,100,200); % requires display (does not work on github)
+            end
            
             % Check plot update
             testCase.verifyEqual(oldlhRO_XData, testCase.App.ROViewObj.lhRO.XData, "x values for RO were updated");

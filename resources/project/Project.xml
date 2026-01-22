@@ -121,6 +121,13 @@
                     <Info/>
                 </File>
             </File>
+            <File Location="simFunction_Dose.mat">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
         </File>
         <File Location="tests">
             <Info>
@@ -152,6 +159,26 @@
         <File Location=".gitignore">
             <Info/>
         </File>
+        <File Location="projectUtilities">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="openWorkshopGuide.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="updateReadmeLinks.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
     </Files>
     <Info Location="ProjectData">
         <Info Name="DevOps"/>
@@ -166,8 +193,19 @@
         <Reference Location="7c74904b-2d30-46df-b5a9-5ae4350be824">
             <Info Ref="code" Type="Relative"/>
         </Reference>
+        <Reference Location="bf6909d8-058c-4f76-93cb-1dac734dec7e">
+            <Info Ref="projectUtilities" Type="Relative"/>
+        </Reference>
         <Reference Location="cc59744e-559b-4c31-9678-209e2d340504">
             <Info Ref="code/images" Type="Relative"/>
         </Reference>
     </ProjectPath>
+    <EntryPoints Location="Root">
+        <EntryPoint Location="7682c9b8-4dcf-4b09-a2af-179a40a883ee">
+            <Info File="projectUtilities/updateReadmeLinks.m" GroupUUID="default" Icon="" Name="Update README links" Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="1d249d46-b155-42b1-8fcf-6b5d3f62b50f">
+            <Info File="projectUtilities/openWorkshopGuide.m" GroupUUID="default" Icon="" Name="Open workshop guide" Type="Basic" Visible="1"/>
+        </EntryPoint>
+    </EntryPoints>
 </project>
