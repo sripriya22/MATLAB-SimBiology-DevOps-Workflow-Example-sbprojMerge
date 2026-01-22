@@ -63,9 +63,9 @@ function compileTask(~)
 
     MATfilename = dir(fullfile(rootFolder,"code","*.mat"));
     MATfilename = fullfile(rootFolder,"code",MATfilename.name);
-    load(MATfilename,"dependenciesSimFun");
+    s = load(MATfilename,"dependenciesSimFun");
 
-    appDependencies = [MATfilename; dependenciesSimFun; ...
+    appDependencies = [MATfilename; s.dependenciesSimFun; ...
         codeFiles; imgFiles];
     appfilename = fullfile(rootFolder,"code","TMDDApp.mlapp");
 

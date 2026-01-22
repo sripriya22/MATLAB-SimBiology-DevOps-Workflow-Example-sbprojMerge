@@ -121,13 +121,6 @@
                     <Info/>
                 </File>
             </File>
-            <File Location="simFunction_Dose.mat">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="design"/>
-                    </Category>
-                </Info>
-            </File>
         </File>
         <File Location="tests">
             <Info>
