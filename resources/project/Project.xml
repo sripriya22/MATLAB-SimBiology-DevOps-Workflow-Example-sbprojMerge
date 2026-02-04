@@ -171,6 +171,13 @@
                     </Category>
                 </Info>
             </File>
+            <File Location="runApp.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
         </File>
         <File Location=".github">
             <Info/>
@@ -206,13 +213,6 @@
         <File Location="WorkshopGuide.md">
             <Info/>
         </File>
-        <File Location="WorkshopPresentation.pdf">
-            <Info>
-                <Category UUID="FileClassCategory">
-                    <Label UUID="artifact"/>
-                </Category>
-            </Info>
-        </File>
     </Files>
     <Info Location="ProjectData">
         <Info Name="DevOps"/>
@@ -239,7 +239,12 @@
             <Info File="projectUtilities/updateReadmeLinks.m" GroupUUID="default" Icon="" Name="Update README links" Type="Basic" Visible="1"/>
         </EntryPoint>
         <EntryPoint Location="1d249d46-b155-42b1-8fcf-6b5d3f62b50f">
-            <Info File="projectUtilities/openWorkshopGuide.m" GroupUUID="default" Icon="" Name="Open workshop guide" Type="Basic" Visible="1"/>
+            <Info File="projectUtilities/openWorkshopGuide.m" GroupUUID="default" Icon="" Name="Open workshop guide" Type="StartUp" Visible="1">
+                <Extension Name="StartUpPrev" Value="HEAD"/>
+            </Info>
+        </EntryPoint>
+        <EntryPoint Location="50089eeb-ad39-46d1-b182-8f9cbe460083">
+            <Info File="projectUtilities/runApp.m" GroupUUID="default" Icon="" Name="Run App" Type="Basic" Visible="1"/>
         </EntryPoint>
     </EntryPoints>
 </project>
