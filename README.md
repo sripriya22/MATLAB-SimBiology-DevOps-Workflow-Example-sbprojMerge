@@ -4,7 +4,9 @@
 
 # MATLAB<sup>&reg;</sup>/SimBiology<sup>&reg;</sup> DevOps Workflow Example
 
-This workshop provides hands-on experience using some of MATLAB's powerful software testing and automation features.
+This workshop provides hands-on experience using some of MATLAB's powerful software testing and automation features.<br>
+It showcases the development of a Web App to simulate a SimBiology model. The App is developed using the [model-view-controller (MVC)](https://www.mathworks.com/company/technical-articles/developing-matlab-apps-using-the-model-view-controller-pattern.html) software architecture pattern and is
+based on the workshop [Generating Tests for Your MATLAB<sup>&reg;</sup> Code](https://github.com/mathworks/Generating-Tests-for-Your-MATLAB-Code-Workshop) developed by [Adam Sifounakis](https://github.com/asifouna).
 <br><br>
 
 ## About the workshop
@@ -26,4 +28,4 @@ Step-by-step workshop instructions can be found in:
 * [WorkshopGuide.m](WorkshopGuide.m)
 <br><br>
 
-Copyright 2025 The MathWorks, Inc.
+Copyright 2026 The MathWorks, Inc.
