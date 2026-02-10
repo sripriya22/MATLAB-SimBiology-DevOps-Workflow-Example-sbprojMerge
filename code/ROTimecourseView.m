@@ -70,7 +70,7 @@ classdef ROTimecourseView < handle
         function update(obj,srcModel,~)
             t = srcModel.SimDataTable;
 
-            set(obj.lhRO,'XData',t.Time, 'YData', t.RO);
+            set(obj.lhRO,'XData',t.Time, 'YData', t.("RO%"));
             
         end % update
 
