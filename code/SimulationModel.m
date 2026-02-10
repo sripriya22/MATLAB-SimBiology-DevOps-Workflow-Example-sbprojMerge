@@ -96,7 +96,7 @@ classdef SimulationModel < handle
         function value = get.ROIsBetweenThresholds(obj)
             % logical value to check whether or not RO remains between thresholds after day 1
             timeAfter24h = obj.SimDataTable.Time >= 24;
-            ROAfter24h = obj.SimDataTable.RO(timeAfter24h);
+            ROAfter24h = obj.SimDataTable.("RO%")(timeAfter24h);
             value = all(ROAfter24h >= obj.ThresholdValues(1)) && ...
                 all(ROAfter24h <= obj.ThresholdValues(2));
         end % get.ROIsBetweenThresholds()
